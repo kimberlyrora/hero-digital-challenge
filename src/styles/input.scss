@@ -1,0 +1,53 @@
+@import "./variables";
+
+.input-container{
+	font-family: $font-family-primary;
+	display: grid;
+	label{
+		font-weight: 700;
+		margin-top: 1em;			
+		margin-bottom: 1em;
+		font-size: 0.75em;
+		letter-spacing: 0.1em;
+		color: $font-field-color;
+		text-transform: uppercase;
+		@media(min-width: 768px){
+			margin-top: 0;
+		}	
+	}
+	.input{
+		height: 40px;
+		outline: none;
+		font-size: 0.75em;
+		font-family: inherit;
+		border: 2px solid $default-field-color;
+		box-shadow: 0px 3px 5px 0px $box-shadow-color;
+		
+		&.validation{
+			border-color: $validation-field-color;
+			background-color: $pink;
+		}
+		&-msg-error{
+			color: $pink2;
+			font-weight: 700;
+			font-size: 0.75em;
+			font-style: italic;
+			margin: 2em 0 0 0;
+			@media(min-width: 768px){
+				margin: 0 0 1em 0;
+			}
+		}
+	}
+	
+	.input:disabled{
+		@extend .input;
+		border-color: $disabled-field-color;
+		background-color: $gray;
+	}
+	
+	.input:focus{
+		@extend .input;
+		border-color: $active-field-color;
+	}
+}
+

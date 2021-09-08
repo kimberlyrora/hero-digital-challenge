@@ -1,0 +1,22 @@
+{
+  "users": {
+    "data": {
+      "check-advances": "true",
+      "check-alerts": "false",
+      "check-communications": "false",
+      "residence": "Yes",
+      "first-name": "kimberly%20luz",
+      "last-name": "rojas%20ramirez",
+      "email": "kimberlyrojasra%40gmail.com",
+      "organization": "notelodire66"
+    },
+    "success": {
+      "status": "success",
+      "message": "Thank you. You are now subscribed."
+    },
+    "error": {
+      "status": "error",
+      "message": "Invalid Subscription request."
+    }
+  }
+}

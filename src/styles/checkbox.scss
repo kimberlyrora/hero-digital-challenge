@@ -1,0 +1,83 @@
+@import "./variables";
+.checkbox{
+	&-container{
+		font-family: $font-family-primary;
+		font-size: 0.75em;
+		color: $font-field-color;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		cursor: pointer;
+		
+		input{
+			width: 0;
+			height: 0;
+			opacity: 0;
+			position: absolute;
+		}
+				
+		input:checked  ~ .checkmark {
+			background-color: $purple;
+		}
+		
+		.checkmark{
+			position: absolute;
+			width: 1.75em;
+			height: 1.75em;
+			background-color: $white;
+			border: solid 2px $default-field-color;
+		}
+		
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	
+		input:checked ~ .checkmark:after {
+			display: block;
+		}
+		  
+		.checkmark:after {
+			left: 7px;
+			top: 3px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		p[class~="checkbox-label"]{
+			margin: 0.3em 0 0 3em;
+		}
+	}
+}
+
+label[class~="checkbox-container"]{
+	margin-top: 5.5em;
+	display: flex;
+	@media(min-width: 768px){
+		margin-top: 4.5em;
+	}
+}
+
+label[id="check-communications"]{
+	margin: 0;
+	display: grid;
+	grid-column: 1 / 2;
+	margin-top: 2em;
+	@media(min-width: 768px){
+		grid-column: 1 / 3;
+		margin-top: 0;
+	}		
+}
+
+label[id="check-alerts"]{
+	margin-top: 2em;
+	@media(min-width: 768px){
+		margin-top: 4.5em;
+	}		
+}
+
+

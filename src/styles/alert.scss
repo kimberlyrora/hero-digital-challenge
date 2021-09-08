@@ -1,0 +1,27 @@
+@import "./variables";
+
+.alert{
+	&-content{
+		border-radius: 2px;
+		z-index: 2;
+		width: 100%;
+		margin: -1.8em 0 1em 0em;
+		display: flex;
+		justify-content: space-between;
+		font-family: $font-family-primary;
+		font-size: 1em;
+		&-msg, span{
+			margin: 0;
+			padding: 1rem;
+		}
+		&.success{
+			border: solid 2px #bee5b0;
+			background: #bee5b0;
+		}
+		&.error{
+			border: solid 2px #ffa194;
+			background: #ffa194;
+		}
+	}
+	
+}

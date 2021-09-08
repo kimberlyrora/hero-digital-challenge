@@ -1,0 +1,35 @@
+@import "./variables";
+.button{
+	border: none;
+	height: 36px;
+	font-weight: 700;
+	font-size: 0.75em;
+	padding: 0rem 3rem;
+	border-radius: 40px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-family: $font-family-primary;
+	box-shadow: 0px 3px 5px 0px $box-shadow-color;
+	cursor: pointer;
+	width: 15rem;
+	margin: 0 auto 1rem;
+	@media(min-width: 768px){
+		max-width: 10rem;
+		margin: 0;
+	}	
+	
+	&.primary{
+		color: $white;
+		background-color: $purple;
+		@media(min-width: 768px){
+			margin-right: 0.6rem;
+		}	
+	}
+	&.secondary{
+		color: $font-field-color;
+		background-color: $white;
+		@media(min-width: 768px){
+			margin-left: 0.6rem;
+		}	
+	}
+}
