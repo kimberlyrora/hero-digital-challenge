@@ -167,7 +167,6 @@ function onSubmit(values, setModalProps){
 				"message": "Invalid Subscription request." 
 			}
 		}
-		console.log("request", request);
 		const getResponse = async () => {
 			const response = await fetch("http://localhost:3000/users", {
 				method: 'POST', 

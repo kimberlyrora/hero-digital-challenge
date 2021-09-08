@@ -1,14 +1,14 @@
 {
   "users": {
     "data": {
-      "check-advances": "true",
-      "check-alerts": "false",
+      "check-advances": "false",
+      "check-alerts": "true",
       "check-communications": "false",
       "residence": "Yes",
-      "first-name": "kimberly%20luz",
-      "last-name": "rojas%20ramirez",
+      "first-name": "Kimberly%20Luz",
+      "last-name": "Rojas%20Ramirez",
       "email": "kimberlyrojasra%40gmail.com",
-      "organization": "notelodire66"
+      "organization": "indra"
     },
     "success": {
       "status": "success",
